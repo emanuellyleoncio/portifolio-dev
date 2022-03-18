@@ -277,7 +277,12 @@ section h1 {
 }
 
 .project {
+    margin-bottom: 70px;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-description {
@@ -345,6 +350,10 @@ section h1 {
     background-image: url('./assets/cup-coffee.jpg');
 }
 
+.projects-section04 {
+    background-image: url('./assets/woman.jpg');
+}
+
 .filter {
     background: rgba(0, 0, 0, 0);
     transition: 1s;
@@ -355,7 +364,7 @@ section h1 {
     background: rgba(0, 0, 0, 0.7)
 }
 
-.projects-section01, .projects-section02, .projects-section03 {
+.projects-section01, .projects-section02, .projects-section03, .projects-section04 {
     background-size: cover;
     border-radius: 10%;
     width: 280px;
@@ -367,14 +376,26 @@ section h1 {
     transition: opacity .2s linear;
 }
 
-.filter:hover .project-description{
-    opacity: 1;
-    transition: opacity .2s linear;
+.more-projects {
+    all:unset;
+    box-sizing: border-box;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #9370DB;
 }
 
-.filter:hover .project-description{
-    opacity: 1;
-    transition: opacity .2s linear;
+.more-projects:hover {
+    transform: scale(1.05);
+}
+
+.more-projects a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #25282B;
 }
 
 .contact {
@@ -423,7 +444,6 @@ section h1 {
 .form-name input:focus , .form-mail input:focus {
     border: 2px solid #808080;
 }
-
 
 .form-msg textarea {
     all: unset;
