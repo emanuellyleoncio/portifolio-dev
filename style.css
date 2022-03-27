@@ -128,6 +128,10 @@ body {
     background-color: #DDA0DD;
 }
 
+.bio-section-btn {
+    position: relative;
+}
+
 .bio-section-btn img {
     width: 35px;
     height: 35px;
@@ -142,15 +146,14 @@ body {
 
 .bio-section-img01 {
     position: absolute;
-    right: 150px;
-    bottom: 300px;
+    top:30px;
+    right: 150px; 
 }
 
 .bio-section-img02 {
     position: absolute;
-    bottom: 180px;
+    top:200px;
 }
-
 
 section {
     margin-left: 222px;
